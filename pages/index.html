@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="numero-secreto">qual é o número secreto?</h1>
+      <div class="borda" id="borda-quadrada">
+        <p class="condicao-de-acerto frase">Você acertou!</p>
+        <p class="condicao-de-erro frase">Você errou!</p>
+        <p><span class="numero-certo">**</span></p>
+      </div>
+      <input type="number" id="campo-digitacao" />
+      <button class="botao-chute" id="botao-chutar">chutar</button>
+      <button class="reset-button" id="botao-reiniciar">Reiniciar</button>
+      <ul id="historico"></ul>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
